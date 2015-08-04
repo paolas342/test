@@ -43,7 +43,7 @@ public class PersonaTest {
 	//si no se produce el resultado esperado
 	@Test
 	public void TestEdad() {
-		assertFalse(p.Mayor());
+		assertTrue(p.Mayor());
 	}
 
 }
