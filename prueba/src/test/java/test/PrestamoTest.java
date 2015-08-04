@@ -1,4 +1,6 @@
 package test;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -30,7 +32,12 @@ public class PrestamoTest {
 		prestamo.setInteres(15);
 
 	}
-
+		@Test
+		public void TestInteres() {
+			int  interes=15;
+			prestamo.setInteres(interes);
+			assertNotNull(prestamo.getInteres());
+		}
 		//Pruebo que nos tire la excepcion
 		@Test(expected= IllegalArgumentException.class)
 		public void testSetpInvalida() {
