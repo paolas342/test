@@ -34,7 +34,7 @@ public class PrestamoTest {
 		//Pruebo que nos tire la excepcion
 		@Test(expected= IllegalArgumentException.class)
 		public void testSetpInvalida() {
-			prestamo.setPersona(pInvalida);
+			prestamo.setPersona(pValida);
 		}
 		
 		//verificamos que todos los get se estan ejecutando
